@@ -40,3 +40,10 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+
+# Block all other files except src folder and tsconfig.json
+/*
+!.gitignore
+!/src/
+!/tsconfig.json
