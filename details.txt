@@ -1,0 +1,7 @@
+custom directives
+creating service(api fetch) , materialized error, 
+
+
+routing,
+lazy loading,
+system design
