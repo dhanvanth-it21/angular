@@ -15,7 +15,7 @@ export const routes: Routes = [
         children: [
             {
                 path: 'child-a',
-                title: 'child-B',
+                title: 'child-A',
                 component: ChildAComponent,
             },
             {

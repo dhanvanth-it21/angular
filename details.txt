@@ -5,3 +5,7 @@ creating service(api fetch) , materialized error,
 routing,
 lazy loading,
 system design
+
+
+lifecycle hooks
+services, rxjs => behaviour subject, debounce

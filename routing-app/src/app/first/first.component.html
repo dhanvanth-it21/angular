@@ -1,9 +1,14 @@
 <h2>First Component</h2>
 
 <div>
+    <h3>{{parentData}}</h3>
+    <button (click)="countFun()">Count</button>
+    <input type="number" [(ngModel)]="parentData">
+    
     <ul>
         <li><a routerLink="child-a">
             Child-A
+            <app-child-a [(childData)]="parentData"></app-child-a>
         </a></li>
         <li><a routerLink="child-b">
             Child-B
@@ -13,6 +18,5 @@
         </a></li>
     </ul>
 </div>
-
 
 <router-outlet></router-outlet>

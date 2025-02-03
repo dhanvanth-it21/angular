@@ -1,0 +1,18 @@
+
+<input type="text"  [formControl]="input" >
+
+<h2>------------------------------------------------</h2>
+<form [formGroup]="formInput" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="name" placeholder="name" />
+    <span *ngIf="this.formInput.controls.name.invalid && this.formInput.controls.name.touched">*give valid name</span>
+    <br>
+    <input type="email" formControlName="email" placeholder="email" />
+    <span ></span>
+
+    <button type="submit">submit</button>
+</form>
+
+<h2>------------------------------------------------</h2>
+
+
+
