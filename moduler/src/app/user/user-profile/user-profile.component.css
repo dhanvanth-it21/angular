@@ -1,0 +1,14 @@
+.user-profile {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .user-profile h1 {
+    color: #4caf50;
+  }
+  
+  .user-profile p {
+    font-size: 18px;
+    color: #333;
+  }
+  
