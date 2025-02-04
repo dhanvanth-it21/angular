@@ -1,24 +1,25 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: null
 })
 export class BlogService {
 
 
-  private blogs = [
-    { id: 1, title: 'First Blog', content: 'This is the content of the first blog.' },
-    { id: 2, title: 'Second Blog', content: 'This is the content of the second blog.' },
-    { id: 3, title: 'Third Blog', content: 'This is the content of the third blog.' },
+  private blogs: { id: number, name: string, email: string }[]
+   = [
+    { id: 1, name: 'Ram', email: 'ram@gmial.com' },
+    { id: 2, name: 'Kumar', email: 'kumar@gmail.com' },
+    { id: 3, name: 'Sundar', email: 'sundar@gmail.com' },
   ];
 
   constructor() { }
 
-  getBlogs() {
+  getBlogs(): { id: number, name: string, email: string }[] {
     return this.blogs;
   }
 
-  getBlogById(id: number) {
+  getBlogById(id: number): { id: number, name: string, email: string } | undefined {
     return this.blogs.find(blog => blog.id === id);
   }
 }

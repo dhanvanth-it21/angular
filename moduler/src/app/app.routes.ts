@@ -7,11 +7,6 @@ export const routes: Routes = [
         path: "blogs",
         loadChildren: () => import("./blog/blog.module").then(m => m.BlogModule),
     },
-    // user module lazy loading
-    {
-        path: "user",
-        loadChildren: () => import("./user/user.module").then(m => m.UserModule),
-    },
     //default route
     {
         path: "",

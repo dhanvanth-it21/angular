@@ -5,13 +5,12 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-blog-detail',
-  standalone: true,
-  imports: [CommonModule],
+  standalone: false,
   templateUrl: './blog-detail.component.html',
   styleUrl: './blog-detail.component.css'
 })
 export class BlogDetailComponent {
-  blog!: { id: number; title: string; content: string; };
+  blog!: { id: number; name: string; email: string; };
 
   constructor(
     private route: ActivatedRoute,

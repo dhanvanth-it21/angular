@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterLink, RouterModule, Routes } from '@angular/router';
 import { BlogListComponent } from './blog-list/blog-list.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { CoreModule } from '../core/core.module';
 
 const routes: Routes = [
   {
@@ -16,10 +17,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [BlogDetailComponent, BlogListComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
+    CoreModule,
   ],
   exports: [RouterModule],
 })

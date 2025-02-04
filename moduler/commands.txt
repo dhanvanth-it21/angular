@@ -1,0 +1,13 @@
+# Standalone commands
+ng new my-standalone-app --standalone
+cd my-standalone-app
+ng generate component my-standalone-component --standalone
+ng generate service my-standalone-service --standalone
+ng generate module my-standalone-module --standalone
+
+# Without standalone commands
+ng new my-app
+cd my-app
+ng generate component my-component
+ng generate service my-service
+ng generate module my-module
